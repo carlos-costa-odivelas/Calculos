@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Calculos
 {
+    /// <summary>
+    /// Implementa operações aritméticas.
+    /// </summary>
     internal class Aritmetica
     {
+        public int Somar(int n1, int n2)
+        {
+            return n1 + n2;
+        }
+        public int Subtrair(int n1, int n2)
+        {
+            return n1 - n2;
+        }
     }
 }
