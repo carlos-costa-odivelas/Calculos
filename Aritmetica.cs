@@ -9,7 +9,7 @@ namespace Calculos
     /// <summary>
     /// Implementa operações aritméticas.
     /// </summary>
-    internal class Aritmetica
+    internal static class Aritmetica
     {
         /// <summary>
         /// Tipo de conversão de temperatura a considerar
@@ -27,7 +27,7 @@ namespace Calculos
         /// <param name="n1"></param>
         /// <param name="n2"></param>
         /// <returns>Devolve a soma de dois números inteiros.</returns>
-        public int Somar(int n1, int n2)
+        public static int Somar(int n1, int n2)
         {
             return n1 + n2;
         }
@@ -37,12 +37,12 @@ namespace Calculos
         /// <param name="n1"></param>
         /// <param name="n2"></param>
         /// <returns>Devolve a diferneça entre dois números inteiros.</returns>
-        public int Subtrair(int n1, int n2)
+        public static int Subtrair(int n1, int n2)
         {
             return n1 - n2;
         }
 
-        public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura) {
+        public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura) {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
                 return temperatura * 1.8 + 32;
             else if (conversao == ConversaoTemperatura.FahrenheitCelsius)
