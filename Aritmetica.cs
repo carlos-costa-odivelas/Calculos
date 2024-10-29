@@ -11,10 +11,22 @@ namespace Calculos
     /// </summary>
     internal class Aritmetica
     {
+        /// <summary>
+        /// Operação Soma.
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>Devolve a soma de dois números inteiros.</returns>
         public int Somar(int n1, int n2)
         {
             return n1 + n2;
         }
+        /// <summary>
+        /// Operação de subtração.
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>Devolve a diferneça entre dois números inteiros.</returns>
         public int Subtrair(int n1, int n2)
         {
             return n1 - n2;
