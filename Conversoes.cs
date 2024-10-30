@@ -21,6 +21,15 @@ namespace Calculos
             CelsiusFahrenheit,
             FahrenheitCelsius
         }
+
+        public enum ConversaoDistancia
+        {
+            Nulo = 0,
+            MetrosParaMilhas,
+            MilhasParaMetros
+        }
+
+
         /// <summary>
         /// Método de conversão de temperaturas
         /// </summary>
@@ -36,6 +45,24 @@ namespace Calculos
             else
                 return temperatura;
         }
+        /// <summary>
+        /// Método de conversão de distâncias
+        /// </summary>
+        /// <param name="conversao">Conversão a efetuar</param>
+        /// <param name="distancia">Distância a converter</param>
+        /// <returns>Devolve o resultado da conversão.</returns>
+        public static double ConverterDistancia(ConversaoDistancia conversao, double distancia)
+        {
+            if (conversao == ConversaoDistancia.MetrosParaMilhas)
+                return distancia * 0.0006213712;
+            else if (conversao == ConversaoDistancia.MilhasParaMetros)
+                return distancia * 1609.344;
+            else
+                return distancia;
+        }
+
+
+
 
     }
 }
