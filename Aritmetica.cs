@@ -33,6 +33,16 @@ namespace Calculos
         {
             return n1 - n2;
         }
+        /// <summary>
+        /// Operação de multiplicação.
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>Devolve o produto entre dois números inteiros</returns>
+        public static int Multiplicar(int n1, int n2)
+        {
+            return n1 * n2;
+        }
 
      
 
